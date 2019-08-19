@@ -31,7 +31,6 @@ $('.card').click(function() {
 
 $('.cart-1').click(function(){
   $(this).removeClass('cart-close');
-  $('#cart-none').removeAttr('id');
   $('.cart-2').addClass('cart-open');
   $('.cart-open').slideUp("slow");
   $('.cart-1').delay(625).slideDown("slow");

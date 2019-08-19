@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./homestyle.css">
+  <style>
+    input[type=radio]{
+  transform:scale(2);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    
+}
+.brand-name {
+    width: 169px;
+height: 40px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 33px;
+line-height: 40px;
+
+color: #727272;
+}
+
+/* hide talk to a consultant */
+#hide-md {
+  display: none;
+}
+
+/* How it works */
+.how-it-works:hover {
+  background: #f18701;
+  color:#ffffff
+}
+.ct {
+  font-size: 12px;
+            line-height: 19px;
+            text-align: center;
+            
+            color: #7E7E7E;
+}
+.footer-bg-color {
+  background: #F3F3F3;
+}
+
+@media only screen and (max-width: 769px) { 
+  #hide-md {
+    display: block;
+  }
+  #hide-sm {
+    display: none;
+  }
+}
+
+  </style>
+  <title>Home Page</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="brand">
+          <div class="logo">
+            <svg width="49" height="46" viewBox="0 0 49 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M39.7572 31.3289C37.5564 35.3787 33.9137 38.3206 29.5122 39.5814C27.9185 40.0399 26.3248 40.2691 24.7311 40.2691C21.5058 40.2691 18.3564 39.3522 15.7003 37.6711C15.3588 37.4419 14.9035 37.4037 14.524 37.5183L11.1849 38.5116C10.0086 38.8555 9.74299 40.3837 10.6916 41.1096C14.6758 44.2425 19.6086 46 24.7691 46C26.856 46 29.0189 45.6944 31.1438 45.0831C36.9873 43.3638 41.8442 39.4668 44.8039 34.0797C45.411 32.9718 45.9042 31.8638 46.3216 30.6794C46.739 29.5332 45.6766 28.387 44.5003 28.7309L41.1612 29.7243C40.7438 29.8389 40.4402 30.1063 40.2505 30.4884C40.0608 30.794 39.909 31.0615 39.7572 31.3289Z"
+                fill="#F06C1F" />
+              <path
+                d="M19.9502 6.4186C21.5439 5.96013 23.1375 5.7309 24.7312 5.7309C27.9565 5.7309 31.1059 6.64784 33.762 8.3289C34.1035 8.55814 34.5589 8.59634 34.9383 8.48173L38.3154 7.48837C39.4537 7.14452 39.7952 5.61628 38.8466 4.89036C37.898 4.12625 36.8356 3.43854 35.7352 2.82724C30.4229 -0.114618 24.2379 -0.802326 18.3944 0.916943C11.0711 3.05648 5.6071 8.59634 3.21658 15.3206C2.79919 16.4668 3.86164 17.5747 5.03792 17.2309L8.37706 16.2375C8.7565 16.1229 9.098 15.8555 9.28773 15.4734C11.3747 11.2326 15.1312 7.83222 19.9502 6.4186Z"
+                fill="#F06C1F" />
+              <path
+                d="M42.1855 8.9402L2.5713 20.5548C1.24324 20.9369 0.484343 22.3505 0.86379 23.6877L4.24086 35.3787C4.62031 36.7159 6.02426 37.4801 7.35233 37.098L46.9666 25.5216C48.2946 25.1395 49.0535 23.7259 48.6741 22.3887L45.297 10.6977C44.8796 9.32226 43.5136 8.55814 42.1855 8.9402ZM23.2132 27.6611L20.1397 26.0565C19.5326 25.7508 19.3049 24.9867 19.6085 24.4136C19.912 23.8023 20.6709 23.5731 21.2401 23.8787L23.2891 24.9485L27.6907 16.4286C27.9942 15.8173 28.7531 15.588 29.3223 15.8937C29.9294 16.1993 30.1571 16.9635 29.8535 17.5365L24.9207 27.1262C24.5792 27.7757 23.8203 28.005 23.2132 27.6611Z"
+                fill="#F18701" />
+            </svg>
+          </div>
+          <div class="brand-name">VisaPoint</div>
+        </div>
+        <div class="space"></div>
+
+
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav nav-links">
+
+          <li class="p-2">
+            <a href="#">How It Works</a>
+          </li>
+          <li class="p-2">
+            <a href="#">Schedule Appointment</a>
+          </li>
+          <li class="p-2">
+            <a href="#">Pricing</a>
+          </li>
+          <li class="p-2">
+            <a href="#">Shop</a>
+          </li>
+          <li class="p-2">
+            <a href="#">Diary</a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="talk p-3" align="center">
+                <span>TALK TO A CONSULTANT</span>
+              </div>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="hide-md">
+    <div class="row text-white d-flex justify-content-center align-items-center " style="height: 58px; background: #f18701" >TALK TO A CONSULTANT</div>
+  </div>
+
+  
+  <div id="hide-sm" class="">
+    <div class="row text-white font-weight-light d-flex justify-content-center align-items-center "
+    style="background: #00BD40; height: 82px; font-size: 19px; line-height: 23px;">
+    <div class="">
+      <span class="align-middle">Your request has been received. You will get a response from us into your email in less
+        than 24 hours</span>
+    </div>
+    <div class="">
+      <span class=""></span>
+    </div>
+  </div>
+  </div>
+  
+
+<div id="hide-md">
+  <div class="row" style="min-height: 299px ">
+    <div class="card d-flex justify-content-center align-items-center pt-5" style="background: #00BD40;">
+      <img src="./img/sm.png" width="50px" height="50px" />
+      <div class="card-body d-flex flex-column align-items-center m-4">
+        <p class="card-text text-wrap text-white" style="font-size: 19px;
+          line-height: 23px;
+          text-align: center;">Your request has been received. You will get a response from us into your email in less
+          than 24 hours</p>
+  
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="hide-sm" class="">
+    <div class="p-5 mb-5 d-flex" style=" background-image:url(./img/afro.png); width:100%; height: 413px" >
+      <div class="col-md-4 d-flex flex-column text-white">
+        <h1 class="mb-2 ml-2" >See the World</h1>
+        <p class="ml-2 mb-4" >Become the one who gets it right with every visa application</p>
+        <button class="ml-2 btn" style="width: 228px; height: 48px; background: #F18701; color:#fff; border:none; font-weight: 500;font-size: 12px;line-height: 15px;" >START APPLICATION NOW</button>
+        <div class="d-flex mt-5 ml-3">
+          <div class="d-flex align-items-center justify-content-center mr-3">
+            <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="19" cy="19.7056" r="19" fill="#F06C1F" />
+              <path
+                d="M14 12.3289L14 26.8738C14 27.665 14.8753 28.1428 15.5408 27.7149L27.6517 19.9282C28.2869 19.5199 28.2576 18.5818 27.5982 18.2139L15.4873 11.4557C14.8207 11.0837 14 11.5656 14 12.3289Z"
+                fill="white" />
+            </svg>
+          </div>
+            <div class="" style="margin-top: 10px" >
+              <p class="text-center" >See How VisaPoint Works</p> 
+            </div>
+                      
+        </div>
+      </div>
+      
+      <div class="row border border-danger">
+        <div class="col-md-12">
+          <div class=" d-flex justify-content-center align-items-end border border-success " style="" >
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M49.336 25.2644C49.336 11.8476 38.42 0.931641 25.0033 0.931641C24.4574 0.931641 24.0208 1.36828 24.0208 1.91408V10.9148H23.5643C19.0094 10.9148 15.2979 14.6163 15.2979 19.1812V31.3575C15.2979 35.9125 18.9994 39.6239 23.5643 39.6239H26.4323C30.9872 39.6239 34.6986 35.9224 34.6986 31.3575V19.1713C34.6986 14.6163 30.9971 10.9049 26.4323 10.9049H25.9758V2.90644C37.8643 3.42247 47.3711 13.2568 47.3711 25.2644C47.3711 33.1636 43.3322 40.3186 36.5742 44.417C29.588 48.6445 21.0636 48.714 13.1941 44.6056C9.95902 42.9086 7.3491 40.2987 5.65216 37.0537C0.362859 26.9018 2.10942 15.7179 10.1079 8.58276C10.5147 8.22551 10.5445 7.60032 10.1873 7.19345C9.83001 6.78659 9.20482 6.75681 8.79795 7.11407C4.81857 10.6667 2.07965 15.4896 1.08728 20.6995C0.0155318 26.3659 0.988049 32.3399 3.9056 37.9468C5.78117 41.559 8.67887 44.4567 12.2811 46.3323C16.4491 48.5155 20.7956 49.5972 25.0429 49.5972C29.4391 49.5972 33.736 48.4262 37.5963 46.0842C44.9498 41.6384 49.336 33.8483 49.336 25.2644ZM26.4422 12.8698C29.9154 12.8698 32.7437 15.698 32.7437 19.1713V31.3476C32.7437 34.8209 29.9154 37.6491 26.4422 37.6491H23.5742C20.101 37.6491 17.2727 34.8209 17.2727 31.3476V19.1713C17.2727 15.698 20.101 12.8698 23.5742 12.8698H26.4422Z"
+                fill="#F18701" />
+            </svg>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="card d-flex justify-content-center align-items-center shadow">
+          <svg class="pt-3" width="40" height="40" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23.2217 0.931641C10.8115 0.931641 0.72168 11.0215 0.72168 23.4316C0.72168 35.8418 10.8115 45.9316 23.2217 45.9316C35.6318 45.9316 45.7217 35.8418 45.7217 23.4316C45.7217 11.0215 35.6318 0.931641 23.2217 0.931641ZM40.2139 15.5566C39.5811 15.8027 38.9131 15.9316 38.2217 15.9316C35.1162 15.9316 32.5967 13.4121 32.5967 10.3066C32.5967 9.35742 32.8545 8.45508 33.2998 7.64648C36.2881 9.55664 38.7021 12.2988 40.2139 15.5566ZM23.4561 42.1699L17.5967 30.4863V22.377L22.7295 25.3066H29.1865L30.6045 32.3848L23.6436 42.1699C23.5732 42.1582 23.5146 42.1699 23.4561 42.1699ZM14.9951 18.6973C12.2295 18.334 10.0967 15.9785 10.0967 13.1191V10.0605C13.0615 7.14258 16.9873 5.20898 21.3467 4.77539V12.3457L16.3428 17.3379L14.9951 18.6973ZM4.47168 23.4316C4.47168 20.373 5.22168 17.4902 6.52246 14.9355C7.24902 18.627 10.1553 21.5449 13.8467 22.3066V31.377L19.0146 41.6895C10.7061 39.7793 4.47168 32.3262 4.47168 23.4316ZM28.835 41.3145L34.5889 33.2285L32.2568 21.5566H23.7139L19.7178 19.2715L25.0967 13.8926V4.77539C26.7842 4.93945 28.4014 5.34961 29.9248 5.94727C29.2217 7.2832 28.8467 8.77148 28.8467 10.3066C28.8467 15.4746 33.0537 19.6816 38.2217 19.6816C39.335 19.6816 40.4248 19.4824 41.4443 19.1074C41.7725 20.502 41.9717 21.9434 41.9717 23.4316C41.9717 31.8105 36.4404 38.9238 28.835 41.3145Z"
+              fill="#F06C1F" />
+          </svg>
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="card-title pb-2" >Visit</div>
+            <p class="card-text text-wrap ct">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+              nibh euismod tin</p>
+              <button class="btn" style="background: #F18701; color:#fff; border:none; font-weight: 500;font-size: 12px;line-height: 15px;" >LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="card d-flex justify-content-center align-items-center shadow">
+          <svg class="pt-3" width="40" height="46" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5786 21.3602C15.5786 19.3057 17.2384 17.6459 19.2929 17.6459C21.3474 17.6459 23.0072 19.3057 23.0072 21.3602V28.7888C23.0072 26.7343 24.667 25.0745 26.7215 25.0745C28.7759 25.0745 30.4358 26.7343 30.4358 28.7888V2.78876H2.57861V43.6459H15.5786V21.3602Z"
+              fill="#FFB85F" />
+            <path
+              d="M0.72168 0.931641V45.5031H10.0074V41.7888H4.43597V4.64593H28.5788V23.5424C27.9985 23.3334 27.3717 23.2174 26.7217 23.2174C26.0717 23.2174 25.4449 23.3334 24.8645 23.5424V21.3602C24.8645 18.2843 22.369 15.7888 19.2931 15.7888C16.2172 15.7888 13.7217 18.2843 13.7217 21.3602V45.5031H17.436V21.3602C17.436 20.3388 18.2717 19.5031 19.2931 19.5031C20.3145 19.5031 21.1503 20.3388 21.1503 21.3602V28.7888V36.2174H24.8645V28.7888C24.8645 27.7674 25.7003 26.9316 26.7217 26.9316C27.7431 26.9316 28.5788 27.7674 28.5788 28.7888V32.5031V36.2174H32.2931V32.5031C32.2931 31.4816 33.1288 30.6459 34.1502 30.6459C35.1717 30.6459 36.0074 31.4816 36.0074 32.5031V45.5031H39.7217V32.5031C39.7217 29.4272 37.2261 26.9316 34.1502 26.9316C33.5003 26.9316 32.8735 27.0477 32.2931 27.2566V0.931641H0.72168Z"
+              fill="#F06C1F" />
+            <path d="M21.1504 41.7888H24.8647V45.503H21.1504V41.7888Z" fill="#F06C1F" />
+            <path d="M28.5786 41.7888H32.2929V45.503H28.5786V41.7888Z" fill="#F06C1F" />
+          </svg>
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="card-title">eVISA</div>
+            <p class="card-text text-wrap ct">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+              nibh euismod tin</p>
+              <button class="btn" style="background: #F18701; color:#fff; border:none; font-weight: 500;font-size: 12px;line-height: 15px;" >LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="card d-flex justify-content-center align-items-center shadow">
+          <svg class="pt-3" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M28.2217 32.0983H17.2217V26.5983H6.22168V35.765H17.2217V43.0983H28.2217V35.765H39.2217V26.5983H28.2217V32.0983Z"
+              fill="#FFB85F" />
+            <path
+              d="M28.2217 13.765H17.2217V6.43164H6.22168V17.4316H17.2217V22.9316H28.2217V17.4316H39.2217V6.43164H28.2217V13.765Z"
+              fill="#FFB85F" />
+            <path
+              d="M41.055 4.59831H30.055V0.931641H15.3883V4.59831H4.38835V41.265H0.72168V44.9316H44.7217V41.265H41.055V4.59831ZM15.3883 41.265H8.05501V37.5983H15.3883V41.265ZM15.3883 33.9316H8.05501V28.4316H15.3883V33.9316ZM15.3883 24.765H8.05501V19.265H15.3883V24.765ZM15.3883 15.5983H8.05501V8.26497H15.3883V15.5983ZM26.3883 41.265H19.055V33.9316H26.3883V41.265ZM26.3883 30.265H19.055V24.765H26.3883V30.265ZM26.3883 21.0983H19.055V15.5983H26.3883V21.0983ZM26.3883 11.9316H19.055V4.59831H26.3883V11.9316ZM37.3883 41.265H30.055V37.5983H37.3883V41.265ZM37.3883 33.9316H30.055V28.4316H37.3883V33.9316ZM37.3883 24.765H30.055V19.265H37.3883V24.765ZM37.3883 15.5983H30.055V8.26497H37.3883V15.5983Z"
+              fill="#F06C1F" />
+          </svg>
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="card-title pb-2">Study</div>
+            <p class="card-text text-wrap ct">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+              nibh euismod tin</p>
+              <button class="btn" style="background: #F18701; color:#fff; border:none; font-weight: 500;font-size: 12px;line-height: 15px;" >LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <div class="card d-flex justify-content-center align-items-center shadow">
+          <svg class="pt-3" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.2538 26.125L2.62842 29.7504L6.2538 33.3758H38.8822L42.5076 29.7504L38.8822 26.125H6.2538Z"
+              fill="#FFB85F" />
+            <path d="M31.6317 18.8748L35.257 15.2494L31.6317 11.624H13.5048L9.87939 15.2494L13.5048 18.8748H31.6317Z"
+              fill="#FFB85F" />
+            <path
+              d="M27.9381 24.3127V20.6873H32.3112L37.7492 15.2492L32.3112 9.81118H27.9381V5.43807L22.5 0L17.0619 5.43807V9.81118H12.6888L7.25075 15.2492L12.6888 20.6873H17.0619V24.3127H5.43807L0 29.7508L5.43807 35.1888H17.0619V40.6269H13.4366V44.2523H31.5634V40.6269H27.9381V35.1888H39.5619L45 29.7508L39.5619 24.3127H27.9381ZM20.6873 6.93354L22.5 5.12085L24.3127 6.93354V9.81118H20.6873V6.93354ZM14.1843 17.0619L12.3716 15.2492L14.1843 13.4366H30.8157L32.6284 15.2492L30.8157 17.0619H14.1843ZM24.3127 20.6873V24.3127H20.6873V20.6873H24.3127ZM24.3127 40.6269H20.6873V35.1888H24.3127V40.6269ZM38.0665 31.5634H6.93353L5.12085 29.7508L6.93353 27.9381H38.0665L39.8792 29.7508L38.0665 31.5634Z"
+              fill="#F06C1F" />
+          </svg>
+          <div class="card-body d-flex flex-column align-items-center">
+            <div class="card-title pb-2">Migrate</div>
+            <p class="card-text text-wrap ct">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+              nibh euismod tin</p>
+              <button class="btn" style="background: #F18701; color:#fff; border:none; font-weight: 500;font-size: 12px;line-height: 15px;" >LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="w-50 d-flex flex-column text-center" style="background-color: #F18701;">
+      <div class="mt-5 ml-5 p-3">
+        <h2 class="font-weight-bold text-left " >Here's why you should use VisaPoint</h2>
+      </div>
+
+      <div class="d-flex flex-column justify-content-start ml-5 pl-3 text-white ">
+        <p class=" text-left" ><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50781 6.78369L5.63675 10.9126L15.2068 1.34255" stroke="white" stroke-width="2" />
+          </svg>
+          Join over 6,377 processed applicants</p>
+        <p class=" text-left"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50781 6.78369L5.63675 10.9126L15.2068 1.34255" stroke="white" stroke-width="2" />
+          </svg>
+          Processing visa applications to 182 countries</p>
+        <p class=" text-left"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50781 6.78369L5.63675 10.9126L15.2068 1.34255" stroke="white" stroke-width="2" />
+          </svg>
+          94.77% success rate </p>
+        <p class=" text-left"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50781 6.78369L5.63675 10.9126L15.2068 1.34255" stroke="white" stroke-width="2" />
+          </svg>
+          100% Money Back Guarantee </p>
+        <p class=" text-left"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50781 6.78369L5.63675 10.9126L15.2068 1.34255" stroke="white" stroke-width="2" />
+          </svg>
+          Leading Visa Consulting Platform In Africa</p>
+      </div>
+
+    </div>
+    <div class="w-50 d-flex justify-content-center" style="background-color: #F18701;">
+      <img src="./img/adult-brick-walls-business-212290.png" />
+    </div>
+  </div>
+
+  <div class="howItWorks">
+    How it works
+  </div>
+  <div class=" m-5 p-5">
+    <div class="row">
+      <div class="card-deck col-md-12">
+        <div class="card how-it-works ">
+          <div class="align-self-start pl-n5 pb-1 ">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16.2308" cy="15.8866" r="15.6068" fill="white" />
+              <path d="M18.411 8.8866V22.8866H15.171V11.4866H12.371V8.8866H18.411Z" fill="#6D6D6D" />
+            </svg>
+          </div>
+
+
+          <div class="card-body pl-5 ml-4 text-wrap">
+            <div class="card-title row align-items-center text-left">START AN APPLICATION</div>
+            <h6 class="card-text row align-items-end text-left ">Intimate us on your travel plans</h6>
+          </div>
+        </div>
+        <div class="card how-it-works">
+          <div class="align-self-start pl-n5 pb-1 ">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16.3158" cy="15.8866" r="15.6068" fill="white" />
+              <path
+                d="M21.5559 20.2466V22.8866H10.9759V20.7866L16.3759 15.6866C16.9493 15.1399 17.3359 14.6733 17.5359 14.2866C17.7359 13.8866 17.8359 13.4933 17.8359 13.1066C17.8359 12.5466 17.6426 12.1199 17.2559 11.8266C16.8826 11.5199 16.3293 11.3666 15.5959 11.3666C14.9826 11.3666 14.4293 11.4866 13.9359 11.7266C13.4426 11.9533 13.0293 12.2999 12.6959 12.7666L10.3359 11.2466C10.8826 10.4333 11.6359 9.79993 12.5959 9.3466C13.5559 8.87993 14.6559 8.6466 15.8959 8.6466C16.9359 8.6466 17.8426 8.81993 18.6159 9.1666C19.4026 9.49993 20.0093 9.97993 20.4359 10.6066C20.8759 11.2199 21.0959 11.9466 21.0959 12.7866C21.0959 13.5466 20.9359 14.2599 20.6159 14.9266C20.2959 15.5933 19.6759 16.3533 18.7559 17.2066L15.5359 20.2466H21.5559Z"
+                fill="#6D6D6D" />
+            </svg>
+
+          </div>
+
+
+          <div class="card-body pl-5 ml-4 text-wrap">
+            <div class="card-title row align-items-center text-left p-n5 ">TALK TO AN EXPERT FOR FREE</div>
+            <h6 class="card-text row align-items-end text-left ">
+              Enjoy visa advisory and counselling services while we customize a solution that works for you</h6>
+          </div>
+        </div>
+        <div class="card how-it-works">
+          <div class="align-self-start pl-n5 pb-1 ">
+            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16.4013" cy="15.8866" r="15.6068" fill="white" />
+              <path
+                d="M18.7214 14.5866C19.948 14.7866 20.888 15.2466 21.5414 15.9666C22.1947 16.6733 22.5214 17.5533 22.5214 18.6066C22.5214 19.4199 22.308 20.1733 21.8814 20.8666C21.4547 21.5466 20.8014 22.0933 19.9214 22.5066C19.0547 22.9199 17.988 23.1266 16.7214 23.1266C15.7347 23.1266 14.7614 22.9999 13.8014 22.7466C12.8547 22.4799 12.048 22.1066 11.3814 21.6266L12.6414 19.1466C13.1747 19.5466 13.788 19.8599 14.4814 20.0866C15.188 20.2999 15.908 20.4066 16.6414 20.4066C17.4547 20.4066 18.0947 20.2533 18.5614 19.9466C19.028 19.6266 19.2614 19.1799 19.2614 18.6066C19.2614 17.4599 18.388 16.8866 16.6414 16.8866H15.1614V14.7466L18.0414 11.4866H12.0814V8.8866H21.8814V10.9866L18.7214 14.5866Z"
+                fill="#6D6D6D" />
+            </svg>
+
+          </div>
+
+
+          <div class="card-body pl-5 ml-4 text-wrap">
+            <div class="card-title row align-items-center text-left">BE ON YOUR WAY</div>
+            <h6 class="card-text row align-items-end text-left ">
+              You really should be focused on your travel plans and not worrying if you will get there
+            </h6>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="youtube">
+      <svg width="227" height="226" viewBox="0 0 227 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+          <circle cx="113.172" cy="112.981" r="44.8846" fill="black" fill-opacity="0.59" />
+          <circle cx="113.172" cy="112.981" r="43.3846" stroke="white" stroke-width="3" />
+        </g>
+        <path d="M106.628 96.0018V130.213L130.67 114.244L106.628 96.0018Z" fill="white" />
+        <defs>
+          <filter id="filter0_d" x="0.287598" y="0.0961914" width="225.769" height="225.769"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+            <feOffset />
+            <feGaussianBlur stdDeviation="34" />
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.94 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+          </filter>
+        </defs>
+      </svg>
+
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row">
+      <h2 style="font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        color: #6D6D6D;">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="row mb-3" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      <div class="text-center d-flex align-items-center justify-content-center"
+        style="width: 50px; height:50px; background-color: #F18701; font-size: 26px; line-height: 32px; color: #ffffff; cursor: pointer; ">
+        +</div>
+      <div class="m-2" style="font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 32px;" >What is VisaPoint</div>
+    </div>
+    <div class="collapse mb-4" id="collapseExample">
+      <div class="card card-body">
+        Visapoint.travel is a Visa consulting company which was designed to eliminate the burden and challenges of visa
+        applications for travellers.
+      </div>
+    </div>
+
+    <div class="row mb-3" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      <div class="text-center d-flex align-items-center justify-content-center"
+        style="width: 50px; height:50px; background-color: #F18701; font-size: 26px; line-height: 32px; color: #ffffff; cursor: pointer; ">
+        +</div>
+      <div class="m-2" style="font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 32px;" >What services do you offer?</div>
+    </div>
+
+    <div class="row mb-3" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      <div class="text-center d-flex align-items-center justify-content-center"
+        style="width: 50px; height:50px; background-color: #F18701; font-size: 26px; line-height: 32px; color: #ffffff; cursor: pointer; ">
+        +</div>
+      <div class="m-2 text-wrap " style="font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 32px; 
+vertical-align: top;" >Please tell me about your premium lounge, what are the services included?</div>
+    </div>
+
+    <div class="row mb-3" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      <div class="text-center d-flex align-items-center justify-content-center"
+        style="width: 50px; height:50px; background-color: #F18701; font-size: 26px; line-height: 32px; color: #ffffff; cursor: pointer; ">
+        +</div>
+      <div class="m-2" style="font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;">How does Visapoint obtain a travel visa for me?</div>
+    </div>
+    <div class="row mb-3" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      <div class="text-center d-flex align-items-center justify-content-center"
+        style="width: 50px; height:50px; background-color: #F18701; font-size: 26px; line-height: 32px; color: #ffffff; cursor: pointer; ">
+        +</div>
+      <div class="m-2" style="font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;">What countries do you do VISA for?</div>
+    </div>
+    <div class="row mb-3" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      <div class="text-center d-flex align-items-center justify-content-center"
+        style="width: 50px; height:50px; background-color: #F18701; font-size: 26px; line-height: 32px; color: #ffffff; cursor: pointer; ">
+        +</div>
+      <div class="m-2" style="font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;">Can Visapoint provide me with supporting documents?</div>
+    </div>
+    <div class="row mb-3" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      <div class="text-center d-flex align-items-center justify-content-center"
+        style="width: 50px; height:50px; background-color: #F18701; font-size: 26px; line-height: 32px; color: #ffffff; cursor: pointer; ">
+        +</div>
+      <div class="m-2" style="font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;">Can Visapoint provide Bank Statements?</div>
+    </div>
+    <div class="row mb-3" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+      aria-controls="collapseExample">
+      <div class="text-center d-flex align-items-center justify-content-center"
+        style="width: 50px; height:50px; background-color: #F18701; font-size: 26px; line-height: 32px; color: #ffffff; cursor: pointer; ">
+        +</div>
+      <div class="m-2" style="font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;">What is Visa on arrival?</div>
+    </div>
+
+
+  </div>
+  <div class="d-flex justify-content-center mb-5">
+    <button class="btn btn-lg" style="background: #f18701" >VIEW MORE</button>
+  </div>
+
+  <div class="p-5 text-white " style=" background-image:url(./img/contact-us.png); width:100%; height: 1569.71px" >
+    <div class="col-md-8 offset-md-2 mb-5">
+      <h2 class="text-center mb-3" >Need Assistance with other 
+        Travel Services?</h2>
+      <p class="text-center" >We can Help! Please feel free to contact us with the form below and choose the service you require</p>
+    </div>
+    
+    <form>
+        <div class="form-row m-3">
+          <div class="col-md-6 col-sm-12">
+            <input type="text" class="form-control form-control-lg" placeholder="First name">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <input type="text" class="form-control form-control-lg" placeholder="Last name">
+          </div>
+        </div>
+        <div class="form-row m-3">
+          <div class="col-md-6 col-sm-12">
+            <input type="text" class="form-control form-control-lg" placeholder="Email">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <input type="text" class="form-control form-control-lg" placeholder="Prospective Date">
+          </div>
+        </div>
+        <div class="form-row m-3">
+          <div class="col-md-6 col-sm-12 input-group">
+              <div class="input-group-prepend">
+                  <div class="input-group-text"><svg width="100" height="34" viewBox="0 0 116 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M106.305 62.498H101.012C100.566 62.498 100.343 61.9595 100.658 61.6445L105.951 56.3516C106.266 56.0366 106.805 56.2597 106.805 56.7052V61.998C106.805 62.2742 106.581 62.498 106.305 62.498Z"
+                        fill="#3F3F3F" />
+                    <path
+                        d="M37.2637 28.998C37.2637 28.4458 37.7114 27.998 38.2637 27.998H46.4064V43.9979H38.2637C37.7114 43.9979 37.2637 43.5502 37.2637 42.9979V28.998Z"
+                        fill="#4E8E60" />
+                    <path
+                        d="M55.5488 27.998H63.6916C64.2439 27.998 64.6916 28.4458 64.6916 28.998V42.9979C64.6916 43.5501 64.2439 43.9979 63.6916 43.9979H55.5488V27.998Z"
+                        fill="#4E8E60" />
+                    <rect x="46.4058" y="27.998" width="9.14275" height="15.9998" fill="#F6F6F6" />
+                </svg></div>
+                </div>
+                <input type="text" class="form-control form-control-lg" id="inlineFormInputGroupUsername2" placeholder="Phone Number">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            
+            <select class="custom-select custom-select-lg " id="inputGroupSelect01">
+                <option selected>Destination Country</option>
+                <option value="1">One</option>
+              </select>
+          </div>
+        </div>
+        <div class="form-row m-3">
+          <textarea class="form-control" rows="7" placeholder="Additional Information"></textarea>
+        </div>
+        <div class="form-row m-4">
+          <span class="font-weight-bold ml-5 mr-4 align-middle " >Services Required</span>
+            <div class="form-check form-check-inline ml-2 ">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Visit</label>
+              </div>
+              <div class="form-check form-check-inline ml-2 ">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">eVisa</label>
+              </div>
+              <div class="form-check form-check-inline ml-2 ">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">Study</label>
+              </div>
+              <div class="form-check form-check-inline ml-2 ">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3">
+                  <label class="form-check-label" for="inlineRadio4">Migrate</label>
+                </div>
+        </div>
+
+      </form>
+
+  </div>
+  <div class="container">
+      <div class="howItWorks">
+          You're in great company
+        </div>
+    
+        <div class="card-deck mb-5 mt-5 ">
+            <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Filling the US Visa Form and preparing the supporting documents was chaotic and it seemed to take forever, and time is a precious thing to wasts, so i decided to transfer the stress to Visapoint. Now i can say the rest is history.</p>
+                </div>
+                <div class=" d-flex justify-content-center pt-3" style="background-color: #fff" >
+                  <img src="./rebecca.svg" />
+                  <div class="col">
+                    <span class="font-weight-bold" >Rebecca Essien </span>
+                    <p class="font-weight-light" >Went to United Kingdom</p>
+                  </div>
+                </div>
+                
+              </div>
+            <div class="card">
+                <div class="card-body">
+                  <p class="card-text">Filling the US Visa Form and preparing the supporting documents was chaotic and it seemed to take forever, and time is a precious thing to wasts, so i decided to transfer the stress to Visapoint. Now i can say the rest is history.</p>
+                </div>
+                <div class=" d-flex justify-content-center pt-3" style="background-color: #fff" >
+                  <img src="./svg.svg" />
+                  <div class="col">
+                    <span class="font-weight-bold" >Jide Adekola</span>
+                    <p class="font-weight-light" >Went to United States</p>
+                  </div>
+                </div>
+                
+              </div>
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">Filling the US Visa Form and preparing the supporting documents was chaotic and it seemed to take forever, and time is a precious thing to wasts, so i decided to transfer the stress to Visapoint. Now i can say the rest is history.</p>
+              </div>
+              <div class=" d-flex justify-content-center pt-3" style="background-color: #fff" >
+                <img src="./svg.svg" />
+                <div class="col">
+                  <span class="font-weight-bold" >Kazeem Adetuyi</span>
+                  <p class="font-weight-light" >Went to South Africa</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  </div>
+  <div class="p-5" style=" background-image:url(./img/passport.png); width:100%; height: 412px" >
+    <div class="col-md-10"> 
+      <h2 style="
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 49px;
+      color: #FFFFFF;" >How to get your Visa application issued everytime</h2> 
+      <p style="font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      color: #FFFFFF;" >A Visapoint guide to getting it right</p>
+     <button class="btn btn-lg text-white " style="background: #F18701; border-radius: 3px;" >START APPLICATION NOW</button> 
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="d-flex flex-column justify-content-center align-items-center" style="line-height: 35px" >
+      <div class="font-weight-bold mt-5 mr-5 ml-5"> <h2>Stop taking needless chances.</h2> </div>
+      <div class="font-weight-bold m-3"> <p> Do it the smart Way</p></div>
+      <div class="mb-5"><button class="btn btn-lg text-white " style="background: #F18701; border-radius: 3px;" >START APPLICATION NOW</button></div>
+    </div>
+    
+  </div>
+
+  <div class="d-flex flex-column" style="background: #F3F3F3;">
+    <div class="col-md-12 mt-5 pt-5 d-flex justify-content-center " >
+          <div class="brand">
+              <div class="logo">
+                <svg width="49" height="46" viewBox="0 0 49 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M39.7572 31.3289C37.5564 35.3787 33.9137 38.3206 29.5122 39.5814C27.9185 40.0399 26.3248 40.2691 24.7311 40.2691C21.5058 40.2691 18.3564 39.3522 15.7003 37.6711C15.3588 37.4419 14.9035 37.4037 14.524 37.5183L11.1849 38.5116C10.0086 38.8555 9.74299 40.3837 10.6916 41.1096C14.6758 44.2425 19.6086 46 24.7691 46C26.856 46 29.0189 45.6944 31.1438 45.0831C36.9873 43.3638 41.8442 39.4668 44.8039 34.0797C45.411 32.9718 45.9042 31.8638 46.3216 30.6794C46.739 29.5332 45.6766 28.387 44.5003 28.7309L41.1612 29.7243C40.7438 29.8389 40.4402 30.1063 40.2505 30.4884C40.0608 30.794 39.909 31.0615 39.7572 31.3289Z"
+                    fill="#F06C1F" />
+                  <path
+                    d="M19.9502 6.4186C21.5439 5.96013 23.1375 5.7309 24.7312 5.7309C27.9565 5.7309 31.1059 6.64784 33.762 8.3289C34.1035 8.55814 34.5589 8.59634 34.9383 8.48173L38.3154 7.48837C39.4537 7.14452 39.7952 5.61628 38.8466 4.89036C37.898 4.12625 36.8356 3.43854 35.7352 2.82724C30.4229 -0.114618 24.2379 -0.802326 18.3944 0.916943C11.0711 3.05648 5.6071 8.59634 3.21658 15.3206C2.79919 16.4668 3.86164 17.5747 5.03792 17.2309L8.37706 16.2375C8.7565 16.1229 9.098 15.8555 9.28773 15.4734C11.3747 11.2326 15.1312 7.83222 19.9502 6.4186Z"
+                    fill="#F06C1F" />
+                  <path
+                    d="M42.1855 8.9402L2.5713 20.5548C1.24324 20.9369 0.484343 22.3505 0.86379 23.6877L4.24086 35.3787C4.62031 36.7159 6.02426 37.4801 7.35233 37.098L46.9666 25.5216C48.2946 25.1395 49.0535 23.7259 48.6741 22.3887L45.297 10.6977C44.8796 9.32226 43.5136 8.55814 42.1855 8.9402ZM23.2132 27.6611L20.1397 26.0565C19.5326 25.7508 19.3049 24.9867 19.6085 24.4136C19.912 23.8023 20.6709 23.5731 21.2401 23.8787L23.2891 24.9485L27.6907 16.4286C27.9942 15.8173 28.7531 15.588 29.3223 15.8937C29.9294 16.1993 30.1571 16.9635 29.8535 17.5365L24.9207 27.1262C24.5792 27.7757 23.8203 28.005 23.2132 27.6611Z"
+                    fill="#F18701" />
+                </svg>
+              </div>
+              <div class="brand-name">VisaPoint</div>
+            </div>
+      </div>
+      <ul class="list-group list-group-horizontal-md pt-5 mt-4 mb-5 pb-5 d-flex justify-content-center " >
+          <li class="list-group-item border-0 footer-bg-color ">Affiliate</li>
+          <li class="list-group-item border-0 footer-bg-color ">Privacy Policy</li>
+          <li class="list-group-item border-0 footer-bg-color ">Terms & Condition</li>
+          <li class="list-group-item border-0 footer-bg-color ">Frequently Asked Questions</li>
+          <li class="list-group-item border-0 footer-bg-color ">Visa Requirements</li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center ">
+            <i class="fa fa-instagram m-3"></i> 
+            <i class="fa fa-twitter m-3"></i>
+            <i class="fa fa-facebook m-3"></i>
+            © 2019 Visapoint.travel 
+        </div>
+  </div>
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
